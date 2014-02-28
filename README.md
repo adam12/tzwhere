@@ -1,6 +1,11 @@
-# Tzwhere
+# TZWhere
 
-TODO: Write a gem description
+Lookup a time zone by latitude/longitude using the nearest neighbor method.
+
+## Caveats
+
+The nearest neighbor method can sometimes be inacurrate, if compared to a point
+lookup in a polygon. In most cases, the risk of inaccuracy is acceptable.
 
 ## Installation
 
@@ -18,12 +23,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    TZWhere.lookup(41.7599, -87.2079)
+
+    # => "America/Chicago"
+
+## Running Tests
+
+Ensure the test dependencies are installed:
+
+    $ bundle
+
+Run the test suite:
+
+    $ rake test
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/tzwhere/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+See CONTRIBUTING.md
+
+## Copyright
+
+Copyright (c) 2014 Adam Daniels (<adam@mediadrive.ca>).
+
+Geocode data (points.dat) by [Geonames.org](http://www.geonames.org) is licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/)
+
+See LICENSE for details.

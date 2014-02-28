@@ -8,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = TZWhere::VERSION
   spec.authors       = ["Adam Daniels"]
   spec.email         = ["adam@mediadrive.ca"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Time zone lookup by latitude/longitude using nearest neighbor implementation.}
+  spec.homepage      = "http://github.com/adam12/tzwhere"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
