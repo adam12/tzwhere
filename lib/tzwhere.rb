@@ -1,5 +1,12 @@
+require "kdtree"
 require "tzwhere/version"
+require "tzwhere/query"
 
-module Tzwhere
-  # Your code goes here...
+module TZWhere
+  class << self
+    def lookup(latitude, longitude)
+      @tzwhere ||= TZWhere::Query.new
+      @tzwhere.lookup(latitude, longitude)
+    end
+  end
 end

@@ -5,7 +5,7 @@ require 'tzwhere/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "tzwhere"
-  spec.version       = Tzwhere::VERSION
+  spec.version       = TZWhere::VERSION
   spec.authors       = ["Adam Daniels"]
   spec.email         = ["adam@mediadrive.ca"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
