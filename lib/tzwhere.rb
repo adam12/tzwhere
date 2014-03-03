@@ -1,6 +1,7 @@
 require "kdtree"
 require "tzwhere/version"
 require "tzwhere/query"
+require "tzwhere/active_support"
 
 module TZWhere
   class << self
